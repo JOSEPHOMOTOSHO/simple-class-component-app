@@ -1,3 +1,3 @@
 {
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} ${separator} [Branch: Handling-and-lifting-Events]"
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} ${separator} [Branch: removing-local-state-and-using-controlled-components]"
 }
