@@ -1,3 +1,3 @@
 {
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} ${separator} [Branch: lifting-state-up-and-keeping-compoonents-in-sync]"
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} ${separator} [Branch: functional-stateless-component]"
 }

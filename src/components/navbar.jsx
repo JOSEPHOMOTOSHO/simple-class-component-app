@@ -6,18 +6,19 @@ import {
   NavBrand,
 } from "../components/styles/nav.styled";
 
-class Navbar extends Component {
-  render() {
-    return (
-      <NavBar>
-        <ContainerFluid>
-          <NavBrand href="#">
-            Navbar <Badge>{this.props.totalCountersGreaterThanOne}</Badge>
-          </NavBrand>
-        </ContainerFluid>
-      </NavBar>
-    );
-  }
-}
+//stateless functional component. preferred usage when a component is stateless. props are passed
+//as arguments. you could destructure or use props keyword straight. point is you dont need "this"
+
+const Navbar = (props) => {
+  return (
+    <NavBar>
+      <ContainerFluid>
+        <NavBrand href="#">
+          Navbar <Badge>{props.totalCountersGreaterThanOne}</Badge>
+        </NavBrand>
+      </ContainerFluid>
+    </NavBar>
+  );
+};
 
 export default Navbar;
