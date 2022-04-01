@@ -7,14 +7,15 @@ import { BtnDanger } from "./styles/button.styled";
 
 class Counter extends Component {
   render() {
+    const { onIncrement, onDelete } = this.props;
     return (
       <React.Fragment>
         <FlexWrap>
           <Badge warn={this.isZero()}>{this.formatOnChange()}</Badge>
-          <BtnSmall onClick={() => this.props.onIncrement(this.props.counter)}>
+          <BtnSmall onClick={() => onIncrement(this.props.counter)}>
             Increment
           </BtnSmall>
-          <BtnDanger onClick={() => this.props.onDelete(this.props.counter.id)}>
+          <BtnDanger onClick={() => onDelete(this.props.counter.id)}>
             Delete
           </BtnDanger>
         </FlexWrap>

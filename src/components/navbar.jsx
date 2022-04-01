@@ -9,12 +9,12 @@ import {
 //stateless functional component. preferred usage when a component is stateless. props are passed
 //as arguments. you could destructure or use props keyword straight. point is you dont need "this"
 
-const Navbar = (props) => {
+const Navbar = ({ totalCountersGreaterThanOne }) => {
   return (
     <NavBar>
       <ContainerFluid>
         <NavBrand href="#">
-          Navbar <Badge>{props.totalCountersGreaterThanOne}</Badge>
+          Navbar <Badge>{totalCountersGreaterThanOne}</Badge>
         </NavBrand>
       </ContainerFluid>
     </NavBar>

@@ -4,16 +4,18 @@ import GlobalStyles from "./styles/Global";
 import { BtnSmall } from "../components/styles/button.styled";
 class Counters extends Component {
   render() {
+    const { onIncrement, onDelete, onReset, counters } = this.props;
     return (
       <React.Fragment>
         <GlobalStyles />
-        <BtnSmall onClick={this.props.onReset}>Reset</BtnSmall>
-        {this.props.counters.map((counter) => (
+        <BtnSmall onClick={onReset}>Reset</BtnSmall>
+        {counters.map((counter) => (
           <Counter
             key={counter.id}
             counter={counter}
-            onIncrement={this.props.onIncrement}
-            onDelete={this.props.onDelete}
+            onIncrement={onIncrement}
+            np
+            onDelete={onDelete}
           />
         ))}
       </React.Fragment>
