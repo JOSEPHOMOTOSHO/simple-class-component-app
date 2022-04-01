@@ -9,7 +9,6 @@ class Counter extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Counter #{this.props.counter.id}</h1>
         <FlexWrap>
           <Badge warn={this.isZero()}>{this.formatOnChange()}</Badge>
           <BtnSmall onClick={() => this.props.onIncrement(this.props.counter)}>

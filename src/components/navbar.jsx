@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Badge } from "./styles/badge.styled";
 import {
   NavBar,
   ContainerFluid,
@@ -10,7 +11,9 @@ class Navbar extends Component {
     return (
       <NavBar>
         <ContainerFluid>
-          <NavBrand href="#">Navbar</NavBrand>
+          <NavBrand href="#">
+            Navbar <Badge>{this.props.totalCountersGreaterThanOne}</Badge>
+          </NavBrand>
         </ContainerFluid>
       </NavBar>
     );
