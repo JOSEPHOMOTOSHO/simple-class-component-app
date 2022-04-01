@@ -10,6 +10,9 @@ class Counter extends Component {
     console.log("prevProps", prevProps);
     console.log("prevState", prevState);
   }
+  componentWillUnmount() {
+    console.log("component will unmount.....");
+  }
   render() {
     console.log("Counter - Rendered");
     const { onIncrement, onDelete } = this.props;
