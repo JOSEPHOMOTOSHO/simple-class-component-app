@@ -4,6 +4,7 @@ import GlobalStyles from "./styles/Global";
 import { BtnSmall } from "../components/styles/button.styled";
 class Counters extends Component {
   render() {
+    console.log("App - Counters Rendered");
     const { onIncrement, onDelete, onReset, counters } = this.props;
     return (
       <React.Fragment>

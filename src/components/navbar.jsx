@@ -10,6 +10,7 @@ import {
 //as arguments. you could destructure or use props keyword straight. point is you dont need "this"
 
 const Navbar = ({ totalCountersGreaterThanOne }) => {
+  console.log("App - Component Rendered ");
   return (
     <NavBar>
       <ContainerFluid>

@@ -7,6 +7,7 @@ import { BtnDanger } from "./styles/button.styled";
 
 class Counter extends Component {
   render() {
+    console.log("Counter - Rendered");
     const { onIncrement, onDelete } = this.props;
     return (
       <React.Fragment>
