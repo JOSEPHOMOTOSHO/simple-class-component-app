@@ -6,6 +6,10 @@ import { BtnDanger } from "./styles/button.styled";
 // import GlobalStyle from "./styles/Global";
 
 class Counter extends Component {
+  componentDidUpdate(prevProps, prevState) {
+    console.log("prevProps", prevProps);
+    console.log("prevState", prevState);
+  }
   render() {
     console.log("Counter - Rendered");
     const { onIncrement, onDelete } = this.props;
